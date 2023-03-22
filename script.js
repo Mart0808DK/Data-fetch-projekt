@@ -1,5 +1,7 @@
 "use script";
 
+window.addEventListener("load", start);
+
 /*-----Midlertidlig object til brug i undervisningen-----*/ 
 
 const kenny = {
@@ -19,5 +21,20 @@ const kenny = {
   firstApperance: "S01E01",
 };
 
+function start() {
+showKenny(kenny);
+}
 
 
+function showKenny() {
+  document.querySelector("#dialog-nickName").textContent = kenny.nickname;
+  document.querySelector("#dialog-age").textContent = kenny.age;
+  document.querySelector("#dialog-gender").textContent = kenny.gender;
+  document.querySelector("#dialog-hairColor").textContent = kenny.hairColor;
+  document.querySelector("#dialog-grade").textContent = kenny.schoolgrade;
+  document.querySelector("#dialog-religion").textContent = kenny.religion;
+  document.querySelector("#dialog-voiceBy").textContent = kenny.voicedBy;
+  document.querySelector("#dialog-episodes").textContent = kenny.episodes;
+  document.querySelector("#dialog-firstApperance").textContent = kenny.firstApperance;
+  document.querySelector("#dialog-diedAndComeback").textContent = kenny.diedAndComeback;
+}
