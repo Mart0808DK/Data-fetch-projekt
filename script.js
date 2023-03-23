@@ -61,6 +61,7 @@ function showCh(character) {
   document.querySelector("#dialog-episodes").textContent = character.episodes;
   document.querySelector("#dialog-Apperance").textContent = character.apperances;
   document.querySelector("#dialog-firstApperance").textContent = character.firstApperance;
+  document.querySelector("#dialog-grade").textContent = character.schoolgrade;
 
 
   // show dialog
