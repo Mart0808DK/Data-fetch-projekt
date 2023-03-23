@@ -58,6 +58,9 @@ function showCh(character) {
   document.querySelector("#dialog-hairColor").textContent = character.hairColor;
   document.querySelector("#dialog-voiceBy").textContent = character.voicedBy;
   document.querySelector("#dialog-religion").textContent = character.religion;
+  document.querySelector("#dialog-episodes").textContent = character.episodes;
+  document.querySelector("#dialog-Apperance").textContent = character.apperances;
+  document.querySelector("#dialog-firstApperance").textContent = character.firstApperance;
 
 
   // show dialog
