@@ -17,6 +17,8 @@ showCharacters(kennyC);
 showCharacters(kennyC);
 showCharacters(kennyC);
 showCharacters(kennyC);
+showCharacters(kennyC);
+showCharacters(kennyC);
 
 }
 
@@ -49,6 +51,7 @@ function showCharacters(character) {
 
 function showCh(character) {
   // change element in dialog
+  document.querySelector("#dialog-img").src = character.image;
   document.querySelector("#dialog-nickName").textContent = character.nickname;
   document.querySelector("#dialog-age").textContent = character.age;
   document.querySelector("#dialog-gender").textContent = character.gender;
@@ -56,7 +59,6 @@ function showCh(character) {
   document.querySelector("#dialog-voiceBy").textContent = character.voicedBy;
   document.querySelector("#dialog-religion").textContent = character.religion;
 
-  document.querySelector("#dialog-img").src = character.image;
 
   // show dialog
   document.querySelector("#dialog-characters").showModal();
