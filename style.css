@@ -41,7 +41,7 @@ img {
 
 /* ---------- header styling ---------- */
 header {
-  background-color: var(--green);
+  background-color: rgb(128, 57, 19);
   color: var(--text-color-light);
   padding: 1em;
   position: absolute  ;
@@ -54,7 +54,7 @@ header {
 /* ---------- footer styling ---------- */
 
 footer {
-  background-color: var(--green);
+  background-color: rgb(128, 57, 19);
   color: var(--text-color-light);
   padding: 1em;
   text-align: center;
