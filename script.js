@@ -6,34 +6,25 @@ window.addEventListener("load", start);
 
 
 
-function start() {
-const kenny = {
-  name: 'Kenneth "Kenny" McCormick',
-  nickname: "Princess Kenny",
-  image: "http://southparkstudios.mtvnimages.com/shared/characters/kids/kenny-mccormick.png?height=165",
-  occupation: "Student",
-  age: 9,
-  voicedBy: "Matt Stone (muffled) Eric Stough (unmuffled) Isaac Hayes",
-  gender: "Male",
-  religion: "Roman Catholic , Temporary: Blaintologist*",
-  catchPhrase: "Mrrph rmph rmmph mrrphh!",
-  hairColor: "Blond",
-  schoolgrade: "4th Grade",
-  episodes: "S01E01 to S22E5",
-  diedAndComeback: 120,
-  apperances: 307,
-  firstApperance: "S01E01",
-};
+async function start() {
+const kennyC = await getCharacter("kenny.json");
 
-showCharacters(kenny);
-showCharacters(kenny);
-showCharacters(kenny);
-showCharacters(kenny);
-showCharacters(kenny);
-showCharacters(kenny);
-showCharacters(kenny);
-showCharacters(kenny);
+showCharacters(kennyC);
+showCharacters(kennyC);
+showCharacters(kennyC);
+showCharacters(kennyC);
+showCharacters(kennyC);
+showCharacters(kennyC);
+showCharacters(kennyC);
+showCharacters(kennyC);
 
+}
+
+async function getCharacter(url) {
+  const response = await fetch(url)
+
+  const data = await response.json()
+  return data;
 }
 
 function showCharacters(character) {
