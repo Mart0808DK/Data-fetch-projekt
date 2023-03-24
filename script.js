@@ -2,9 +2,6 @@
 
 window.addEventListener("load", start);
 
-/*-----Midlertidlig object til brug i undervisningen-----*/ 
-
-
 
 async function start() {
 const kennyC = await getCharacter("kenny.json");
