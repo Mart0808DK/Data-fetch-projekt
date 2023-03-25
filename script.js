@@ -5,10 +5,10 @@ window.addEventListener("load", start);
 
 async function start() {
 const kennyC = await getCharacter("kenny.json");
+const cartMan = await getCharacter("https://raw.githubusercontent.com/Bindholt/Data-Projekt/main/data/cartman.json");
 
 showCharacters(kennyC);
-showCharacters(kennyC);
-showCharacters(kennyC);
+showCharacters(cartMan);
 showCharacters(kennyC);
 showCharacters(kennyC);
 showCharacters(kennyC);
@@ -18,14 +18,14 @@ showCharacters(kennyC);
 showCharacters(kennyC);
 
 }
-
+// fetch character 
 async function getCharacter(url) {
   const response = await fetch(url)
 
   const data = await response.json()
   return data;
 }
-
+// viser characters i html ude dialog boks  
 function showCharacters(character) {
   console.log(character);
 
