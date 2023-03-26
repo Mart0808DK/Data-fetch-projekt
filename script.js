@@ -6,9 +6,13 @@ window.addEventListener("load", start);
 async function start() {
 const kennyC = await getCharacter("kenny.json");
 const cartMan = await getCharacter("https://raw.githubusercontent.com/Bindholt/Data-Projekt/main/data/cartman.json");
+const butters = await getCharacter("https://raw.githubusercontent.com/Asbjoernemil/data-assignment/main/data/characters.json");
+const tomCruise = await getCharacter("https://raw.githubusercontent.com/svdf18/SPobjects/main/data/tomcruise.json");
 
 showCharacters(kennyC);
 showCharacters(cartMan);
+showCharacters(butters);
+showCharacters(tomCruise);
 showCharacters(kennyC);
 showCharacters(kennyC);
 showCharacters(kennyC);
