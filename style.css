@@ -44,7 +44,7 @@ header {
   background-color: rgb(128, 57, 19);
   color: var(--text-color-light);
   padding: 1em;
-  position: absolute  ;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -121,7 +121,7 @@ main {
 }
 
 .grid-container > article:hover {
-  box-shadow: 0 8px 16px 0 rgb(44, 43, 43)
+  box-shadow: 0 8px 16px 0 rgb(44, 43, 43);
 }
 
 .grid-container img {
@@ -136,6 +136,7 @@ main {
 
 #dialog-characters {
   border-radius: 2em;
+  width: 500px;
 }
 
 /* ---------- buttons in grid container ---------- */
