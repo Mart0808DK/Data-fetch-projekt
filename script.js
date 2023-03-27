@@ -4,22 +4,11 @@ window.addEventListener("load", start);
 
 
 async function start() {
-const kennyC = await getCharacter("kenny.json");
-const cartMan = await getCharacter("https://raw.githubusercontent.com/Bindholt/Data-Projekt/main/data/cartman.json");
-const butters = await getCharacter("https://raw.githubusercontent.com/Asbjoernemil/data-assignment/main/data/characters.json");
-const tomCruise = await getCharacter("https://raw.githubusercontent.com/svdf18/SPobjects/main/data/tomcruise.json");
+const SouthPark = await getCharacter("https://cederdorff.github.io/dat-js/05-data/southpark.json");
 
-showCharacters(kennyC);
-showCharacters(cartMan);
-showCharacters(butters);
-showCharacters(tomCruise);
-showCharacters(kennyC);
-showCharacters(kennyC);
-showCharacters(kennyC);
-showCharacters(kennyC);
-showCharacters(kennyC);
-showCharacters(kennyC);
-showCharacters(kennyC);
+SouthPark.forEach(showCharacters);
+
+
 
 }
 // fetch character 
@@ -46,11 +35,11 @@ function showCharacters(character) {
 
   function characterClicked() {
     console.log("character clicked");
-    showCh(character);
+    showDialogCharacters(character);
   }
 }
 
-function showCh(character) {
+function showDialogCharacters(character) {
   // change element in dialog
   document.querySelector("#dialog-img").src = character.image;
   document.querySelector("#dialog-nickName").textContent = character.nickname;
