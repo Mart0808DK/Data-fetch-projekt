@@ -1,7 +1,7 @@
 /* ---------- general styling ---------- */
 html {
-  color: var(--text-color-dark);
-  font-family: var(--font-family);
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -21,6 +21,7 @@ h1 {
 
 h2 {
   font-weight: 500;
+  font-style: bold;
   letter-spacing: 0.1px;
 }
 
@@ -31,7 +32,6 @@ h3 {
 
 a {
   cursor: pointer;
-  color: var(--green);
 }
 
 img {
@@ -39,7 +39,7 @@ img {
   height: auto;
 }
 
-/* ---------- header styling ---------- */
+/* header*/
 header {
   background-color: rgb(128, 57, 19);
   color: var(--text-color-light);
@@ -51,7 +51,7 @@ header {
   z-index: 9999;
 }
 
-/* ---------- footer styling ---------- */
+/* footer */
 
 footer {
   background-color: rgb(128, 57, 19);
@@ -60,14 +60,14 @@ footer {
   text-align: center;
 }
 
-/* ---------- main page styling ---------- */
+/* main page*/
 main {
   background: orange;
   animation: fadeIn 0.4s;
-  padding: 137px 0 0;
+  padding: 135px 0 0;
 }
 
-/* ---------- animations ---------- */
+/* animations */
 /* fade in */
 @keyframes fadeIn {
   from {
@@ -79,7 +79,7 @@ main {
   }
 }
 
-/* ---------- grid container styling ---------- */
+/* grid container styling */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -139,7 +139,7 @@ main {
   width: 500px;
 }
 
-/* ---------- buttons in grid container ---------- */
+/* buttons in grid container */
 
 .grid-container .btns {
   padding: 1em 0 0;
@@ -152,8 +152,8 @@ main {
   width: 100%;
 }
 
-/* ---------- form styling ---------- */
-/* input form stryling */
+/* form styling */
+
 form {
   margin: 2em auto 0;
   background-color: var(--light-green);
@@ -184,5 +184,4 @@ input {
   padding: 1em;
   border: 2px solid var(--green);
   display: block;
-  background: var(--white);
 }
