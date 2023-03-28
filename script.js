@@ -49,9 +49,9 @@ function showDialogCharacters(character) {
   document.querySelector("#dialog-voiceBy").textContent = character.voicedBy;
   document.querySelector("#dialog-religion").textContent = character.religion;
   document.querySelector("#dialog-episodes").textContent = character.episodes;
-  document.querySelector("#dialog-Apperance").textContent = character.apperances;
-  document.querySelector("#dialog-firstApperance").textContent = character.firstApperance;
-  document.querySelector("#dialog-grade").textContent = character.schoolgrade;
+  document.querySelector("#dialog-Apperance").textContent = character.appearances;
+  document.querySelector("#dialog-firstApperance").textContent = character.firstAppearance;
+  document.querySelector("#dialog-grade").textContent = character.schoolGrade;
 
 
   // show dialog
