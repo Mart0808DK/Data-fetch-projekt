@@ -4,7 +4,7 @@ window.addEventListener("load", start);
 
 
 async function start() {
-const SouthPark = await getCharacter("http://southparkstudios.mtvnimages.com/shared/characters/kids/kenny-mccormick.png?height=165");
+const SouthPark = await getCharacter("https://cederdorff.github.io/dat-js/05-data/southpark.json");
 
 SouthPark.forEach(showCharacters);
 
