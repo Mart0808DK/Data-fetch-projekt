@@ -2,9 +2,9 @@
 
 window.addEventListener("load", start);
 
-
+// henter karakterene 
 async function start() {
-const SouthPark = await getCharacter("https://cederdorff.github.io/dat-js/05-data/southpark.json");
+const SouthPark = await getCharacter("https://cederdorff.github.io/dat-js/05-data/southpark.json"); 
 
 SouthPark.forEach(showCharacters);
 
@@ -33,12 +33,14 @@ function showCharacters(character) {
   document.querySelector("#characters").insertAdjacentHTML("beforeend", Myhtml);
   document.querySelector("#characters article:last-child").addEventListener("click", characterClicked);
 
+  // sørger for at man kan klikke på karakterene 
   function characterClicked() {
     console.log("character clicked");
     showDialogCharacters(character);
   }
 }
 
+// viser hvad der er i detail view 
 function showDialogCharacters(character) {
   // change element in dialog
   document.querySelector("#dialog-img").src = character.image;
